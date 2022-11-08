@@ -6,12 +6,20 @@ import "../css/style.css"
 import { useRouteMatch } from 'react-router-dom';
 // import Subscribe from './Subscribe';
 
+
+
+function Home() {
+ const match=useRouteMatch()
+ //console.log(match)
+
+ const [feedbacks, setFeedback]=useState([]);
  useEffect(()=>{
     fetch(`https://hemingways-backend.herokuapp.com/feedback/`)
     .then(res=>res.json())
     .then(data=>setFeedback(data))
 
  },[])
+
  const cards=feedbacks.map(feedback=>{
     return (
     <div key={feedback.id} className="feedbackCard" >
