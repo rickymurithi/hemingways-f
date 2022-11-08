@@ -88,6 +88,34 @@ body{
  .btn:hover{
     background-color: #fbd58a;
   }
+                                             /* Rooms */
+.container8{
+    width: 50%;
+    margin: 200px auto 0 auto;
+    font-family:'Montserrat', sans-serif ;
+}
+.container8 img{
+    float: right;
+}
+
+.cont9{
+    width: 40%;
+    text-align: justify;
+}
+.btn1{
+    padding: 13px;
+    background-color: #c1a267;
+    color: inherit;
+    font-weight: 900;
+    font-family:'Poppins', sans-serif;
+    width: 50%;
+    color: white;
+    border: white 1px solid;
+    
+  }
+.btn1:hover{
+     background-color: #fbd58a;
+}
                                            /* Horizontal rule */
 
 hr{
