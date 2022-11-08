@@ -30,3 +30,16 @@ import { useRouteMatch } from 'react-router-dom';
                     <h2>AND CONVENIENCE</h2>
                     <button className='btn'>BUTLER SERVICE</button>
             </div>
+
+            </div>
+            {/*  Rooms  */}
+
+            <div className="container8">
+                <img src={deluxe} alt="rooms" />
+                <div className="cont9">
+                    <h5>Suites</h5>
+                    <h1>Deluxe rooms</h1>
+                    <p>These spacious rooms are 80m² and are located on the ground floor of each wing. Each room features a seating area and private terrace. Large en-suite bathrooms feature walk-in closets, double vanity units and separate bath, shower and WC.</p>
+                    <button className='btn1'>Room Details</button>
+                </div>
+            </div>
