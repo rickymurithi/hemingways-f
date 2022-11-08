@@ -12,6 +12,39 @@ import { useRouteMatch } from 'react-router-dom';
     .then(data=>setFeedback(data))
 
  },[])
+ const cards=feedbacks.map(feedback=>{
+    return (
+    <div key={feedback.id} className="feedbackCard" >
+        <h1>{feedback.rating}</h1>
+        <p>{feedback.comment}</p>
+        <img src={feedback.imgUrl} alt='img' />
+        <p>{feedback.name}</p>
+        <button onClick={handleDelete}  id={feedback.id}>x</button>
+    </div>)
+ })
+
+ //console.log(feedbacks)
+ function handleDelete(e){
+    const newfeedbacks=feedbacks.filter(item=>{
+        // console.log(e.target)
+        // console.log(item.id)
+       return item.id !== parseInt(e.target.id)
+    })
+
+    setFeedback(newfeedbacks)
+    console.log('This is newfeedback:',newfeedbacks)
+    
+    fetch(`https://hemingways-backend.herokuapp.com/feedback/${e.target.id}`,{
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        }
+      })
+      .then(res=>res.json())
+      .then(data=>console.log(data))
+}
+    return (
         <div className='container1'>
             <div className='container2'>
                 <img src={img} alt="resort" />
