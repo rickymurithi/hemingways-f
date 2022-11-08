@@ -116,6 +116,46 @@ body{
 .btn1:hover{
      background-color: #fbd58a;
 }
+                                     /* Feedback section */
+.cont2{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    height: 12%;
+    margin: 100px;
+}
+.fcontainer{
+ display: flex;
+ justify-content: space-around;
+ margin-top: 100px;
+}
+.fcontainer h1{
+ font-family:'Poppins', sans-serif ;
+}
+.feedbackCard img{
+    height: 50px;
+    width: 35;
+}
+.cont3{
+    display: flex;
+    justify-content: center;
+}
+#feedback{
+    text-align: center;
+    height: 1000px;
+}
+#feedback h1{
+    font-size: 2.8rem;
+}
+.cont3 form{
+    border: 1px solid black;
+    height: 600px;
+    padding: 50px;
+    width: 40%;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 1.5rem;
+    text-align: left;
+}
                                            /* Horizontal rule */
 
 hr{
