@@ -6,6 +6,12 @@ import "../css/style.css"
 import { useRouteMatch } from 'react-router-dom';
 // import Subscribe from './Subscribe';
 
+ useEffect(()=>{
+    fetch(`https://hemingways-backend.herokuapp.com/feedback/`)
+    .then(res=>res.json())
+    .then(data=>setFeedback(data))
+
+ },[])
         <div className='container1'>
             <div className='container2'>
                 <img src={img} alt="resort" />
