@@ -43,3 +43,26 @@ import { useRouteMatch } from 'react-router-dom';
                     <button className='btn1'>Room Details</button>
                 </div>
             </div>
+                {/* Feedback */}
+
+            <hr />
+            <div className="cont2">
+                <h1>What our customers have to say about us</h1>
+                <div className='fcontainer'>
+
+                    {cards}
+                </div>
+            </div>
+            
+
+            {/* <Route exact path={`${match.url}`}>
+                <Subscribe/>
+            </Route> */}
+            
+        </div>
+
+
+    )
+}
+
+export default Home;
