@@ -156,6 +156,63 @@ body{
     font-size: 1.5rem;
     text-align: left;
 }
+#rating{
+    position: relative;
+    left: 195px;
+    width: 50%;
+    padding: 10px;
+}
+#comment{
+    position: relative;
+    left: 150px;
+    width: 60%;
+    padding: 10px;
+}
+#comm{
+    position: relative;
+    bottom: 100px;
+}
+#name{
+    position: relative;
+    left: 195px;
+    width: 50%;
+    padding: 10px;
+}
+#imgUrl{
+    position: relative;
+    left: 100px;
+    width: 50%;
+    padding: 10px;
+}
+#submit1{
+    background-color: #c1a267;
+    font-family:'Poppins', sans-serif;
+    font-size: 2rem;
+    border: #c1a267 1px solid;
+    padding: 10px;
+    width: 50%;
+    color: white;
+    position: relative;
+    top: 80px;
+    left: 180px;
+}
+
+#submit1:hover{
+    background-color: #fbd58a;
+}
+.feedbackCard{
+    border: 1px black solid;
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px #e3e3e3;
+}
+ .feedbackCard:hover{
+    box-shadow: 10px 10px 5px #c9c8c8; 
+ }
+ .feedbackCard button{
+    width: 20%;
+    margin-bottom: 10px;
+    background-color: red;
+ }
                                            /* Horizontal rule */
 
 hr{
