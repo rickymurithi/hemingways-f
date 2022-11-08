@@ -1,6 +1,51 @@
 body{
     margin: 0;
 }
+.container1{
+    height:4750px;
+}
+/* .container2{
+   margin-bottom: 100px;
+
+} */
+.container{
+    height: 13%;
+}
+.container3 {
+   width: 40%;
+   text-align:center;
+   margin:auto;
+   height: 50%;
+   font-size: 1.7rem;
+   font-family: 'Montserrat', sans-serif;
+   padding-top: 40px;
+   
+
+}
+.cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.container4 {
+    width: 30%;
+    text-align: justify;
+    height: 50%;
+    font-family:'Poppins', sans-serif;
+    position: relative;
+    left: 120px;
+
+ }
+ .container5{
+    width: 30%;
+    text-align: justify;
+    height: 50%;
+    font-family:'Poppins', sans-serif;
+    position: relative;
+    right: 120px;
+ }
+
                                            /* Horizontal rule */
 
 hr{
