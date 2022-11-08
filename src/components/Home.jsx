@@ -23,3 +23,10 @@ import { useRouteMatch } from 'react-router-dom';
                     </div>
                 </div>
             </div>
+            <div className="container6">
+                <div className='container7'>
+                    <h2>PERSONALISED AND BESPOKE</h2>
+                    <h1>FOR DISCRETION</h1>
+                    <h2>AND CONVENIENCE</h2>
+                    <button className='btn'>BUTLER SERVICE</button>
+            </div>
