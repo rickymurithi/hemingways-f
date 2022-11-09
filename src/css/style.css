@@ -53,3 +53,12 @@ nav{
     position: relative;
     right: 16rem;
 }
+#navButton{
+    position: relative;
+    right: 3rem;
+    width: 10rem;
+    height: 3.5rem;
+    background-color: #c1a267;
+    border: solid 1px #c1a267;
+    color: white;
+}
