@@ -2,6 +2,11 @@ import React,{useState} from 'react';
 import "../css/style.css"
 
 function Subscribe(){
+    const[formData, setValue] =useState({
+        fname:'',
+        lname:'',
+        eml:''
+    })
     
     return(
 
