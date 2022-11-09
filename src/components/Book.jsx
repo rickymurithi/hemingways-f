@@ -9,7 +9,34 @@ function Book(){
         number:'',
         type:'executive_suites'
     })
+    function handleSubmit(e){
+      e.preventDefault()
+      fetch('https://hemingways-backend.herokuapp.com/booked',{
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body:JSON.stringify(formData)
+        })
+        .then(res=>res.json())
+        .then(data=>console.log(data))
+        let form = document.querySelector('form');
+        let p = document.createElement('p');
+          document.getElementById('book').append(p);
+          p.style.fontFamily="'Poppins', sans-serif";
+          p.style.fontSize="40px"
+          p.innerText="Thanks for filling the form. An agent will soon get intouch with you."
+          document.querySelector('#book').querySelector('h2').remove();
+          form.remove();
+          document.getElementById('book').style.height='400px';
   }
+
+  function handleChange(e){
+    setValue((previouState)=>{
+         return {...previouState, [e.target.id]:e.target.value}
+    })
+}
 
   // bookings form
   return(
@@ -40,5 +67,5 @@ function Book(){
     </div>
     
 )
-
+  }
 export default Book;
