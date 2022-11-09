@@ -66,3 +66,8 @@ nav{
 #navButton:hover{
     background-color: #fbd58a;
 }
+
+#navButton:focus{
+    background-color: #fbd58a;
+    font-family:'Poppins', sans-serif;
+}
