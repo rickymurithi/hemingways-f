@@ -13,4 +13,17 @@
     right: 14rem;
     font-family: 'Montserrat', sans-serif;
     
- }
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid ;
+    height: 70px;  
+    align-items:center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+}
