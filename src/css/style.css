@@ -62,3 +62,7 @@ nav{
     border: solid 1px #c1a267;
     color: white;
 }
+
+#navButton:hover{
+    background-color: #fbd58a;
+}
