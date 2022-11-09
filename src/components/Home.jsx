@@ -11,7 +11,7 @@ import { useRouteMatch } from 'react-router-dom';
 function Home() {
  const match=useRouteMatch()
  //console.log(match)
-
+//  const [changedComment,setComment]=useState('')
  const [feedbacks, setFeedback]=useState([]);
  useEffect(()=>{
     fetch(`https://hemingways-backend.herokuapp.com/feedback/`)
@@ -20,11 +20,33 @@ function Home() {
 
  },[])
 
+function handleBlur(e){
+    console.log(e.target.innerText)
+    // //console.log(typeof(e.target.innerText))
+    // setComment(previousState=>{
+    //     previousState=e.target.innerText
+    //     return previousState;
+    // })
+    // console.log('This is new comment:',changedComment)
+    // // console.log("handle Blur")
+
+       fetch(`https://hemingways-backend.herokuapp.com/feedback/${e.target.id}`,{
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body:JSON.stringify({"comment":e.target.innerText})
+      })
+      .then(res=>res.json())
+      .then(data=>console.log(data))
+}
+
  const cards=feedbacks.map(feedback=>{
     return (
     <div key={feedback.id} className="feedbackCard" >
         <h1>{feedback.rating}</h1>
-        <p>{feedback.comment}</p>
+        <p contentEditable='true' onBlur={handleBlur} id={feedback.id}>{feedback.comment}</p>
         <img src={feedback.imgUrl} alt='img' />
         <p>{feedback.name}</p>
         <button onClick={handleDelete}  id={feedback.id}>x</button>
@@ -75,7 +97,7 @@ function Home() {
                     <h2>PERSONALISED AND BESPOKE</h2>
                     <h1>FOR DISCRETION</h1>
                     <h2>AND CONVENIENCE</h2>
-                    <button className='btn'>BUTLER SERVICE</button>
+                    <button className='btn'>BUTLER SERVI    CE</button>
             </div>
 
             </div>
