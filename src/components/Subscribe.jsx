@@ -7,7 +7,31 @@ function Subscribe(){
         lname:'',
         eml:''
     })
-    
+    function handleSubmit(e){
+        e.preventDefault()
+        fetch('https://hemingways-backend.herokuapp.com/subscribe',{
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+            },
+            body:JSON.stringify(formData)
+          })
+          .then(res=>res.json())
+          .then(data=>console.log(data))
+          let form = document.querySelector('form');
+          let p = document.createElement('p');
+            document.getElementById('subscribe').append(p);
+            p.style.fontFamily="'Poppins', sans-serif";
+            p.style.fontSize="40px"
+            p.innerText="Thank you for subscribing to our news letter."
+            form.remove();
+    }
+    function handleChange(e){
+        setValue((previouState)=>{
+             return {...previouState, [e.target.id]:e.target.value}
+        })
+    }
     return(
 
         <div className="container9">
