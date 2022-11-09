@@ -10,6 +10,8 @@ function Book(){
         type:'executive_suites'
     })
   }
+
+  // bookings form
   return(
     <div id='book'>
         <h1>Welcome to Hemingways Suites deluxe</h1>
