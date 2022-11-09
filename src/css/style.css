@@ -7,3 +7,10 @@
 #img-navlink{
     width: 40px;
 }
+
+#header{
+    position: relative;
+    right: 14rem;
+    font-family: 'Montserrat', sans-serif;
+    
+ }
