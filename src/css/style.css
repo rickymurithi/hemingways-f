@@ -38,3 +38,18 @@ nav{
 .navlink:hover{
     color: #c1a267;
 }
+
+.navlink:focus{
+    text-decoration: underline;
+    text-decoration-color: #c1a267;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
+}
+
+.container1-nav{
+    width: 40%;
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    right: 16rem;
+}
