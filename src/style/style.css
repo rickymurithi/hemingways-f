@@ -1,0 +1,172 @@
+/*feedback section */
+
+.cont2{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    height: 12%;
+    margin: 100px;
+}
+.fcontainer{
+ display: flex;
+ justify-content: space-around;
+ margin-top: 100px;
+}
+.fcontainer h1{
+ font-family:'Poppins', sans-serif ;
+}
+.feedbackCard img{
+    height: 50px;
+    width: 35;
+}
+.cont3{
+    display: flex;
+    justify-content: center;
+}
+#feedback{
+    text-align: center;
+    height: 1000px;
+}
+#feedback h1{
+    font-size: 2.8rem;
+}
+.cont3 form{
+    border: 1px solid black;
+    height: 600px;
+    padding: 50px;
+    width: 40%;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 1.5rem;
+    text-align: left;
+}
+#rating{
+    position: relative;
+    left: 195px;
+    width: 50%;
+    padding: 10px;
+}
+#comment{
+    position: relative;
+    left: 150px;
+    width: 60%;
+    padding: 10px;
+}
+#comm{
+    position: relative;
+    bottom: 100px;
+}
+#name{
+    position: relative;
+    left: 195px;
+    width: 50%;
+    padding: 10px;
+}
+#imgUrl{
+    position: relative;
+    left: 100px;
+    width: 50%;
+    padding: 10px;
+}
+#submit1{
+    background-color: #c1a267;
+    font-family:'Poppins', sans-serif;
+    font-size: 2rem;
+    border: #c1a267 1px solid;
+    padding: 10px;
+    width: 50%;
+    color: white;
+    position: relative;
+    top: 80px;
+    left: 180px;
+}
+
+#submit1:hover{
+    background-color: #fbd58a;
+}
+.feedbackCard{
+    border: 1px black solid;
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px #e3e3e3;
+}
+ .feedbackCard:hover{
+    box-shadow: 10px 10px 5px #c9c8c8; 
+ }
+ .feedbackCard button{
+    width: 20%;
+    margin-bottom: 10px;
+    background-color: red;
+ }
+
+
+
+ /* Booking */
+#book{
+    height: 1000px;
+    text-align: center; 
+    margin-bottom: 40px; 
+}
+#book h1{
+    font-size: 2.8rem;
+}
+.cont4{
+    display: flex;
+    justify-content: center;
+}
+.cont4 form{
+    border: 1px solid black;
+    height: 600px;
+    padding: 50px;
+    width: 40%;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#name1{
+    padding: 10px;
+    position: relative;
+    left: 132px;
+    width: 40%;
+}
+/* #lname{
+    padding: 10px;
+    position: relative;
+    left: 80px;
+    width: 40%;
+} */
+#email{
+    padding: 10px;
+    position: relative;
+    left: 140px;
+    width: 40%;
+}
+#number{
+    padding: 10px;
+    position: relative;
+    left: 28px;
+    width: 40%;
+}
+#type{
+    padding: 10px;
+    position: relative;
+    left: 28px;
+    width: 45%;
+    font-size: 1.5rem;
+    font-family:'Montserrat', sans-serif ;
+}
+#submit2{
+    background-color: #c1a267;
+    font-family:'Poppins', sans-serif;
+    font-size: 2rem;
+    border: #c1a267 1px solid;
+    padding: 10px;
+    width: 50%;
+    color: white;
+    position: relative;
+    top: 80px;
+    left: 180px;
+}
+
+#submit2:hover{
+    background-color: #fbd58a;
+}
