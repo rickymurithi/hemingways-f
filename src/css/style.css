@@ -1,3 +1,4 @@
+/* <<<<<<< HEAD */
 /* Navbar */
 #logo{
     /* width:100% ; */
@@ -71,4 +72,230 @@ nav{
 #navButton:focus{
     background-color: #fbd58a;
     font-family:'Poppins', sans-serif;
+}
+/* ======= */
+body{
+    margin: 0;
+}
+                                        /* Home-section 1 */
+.container1{
+    height:4750px;
+}
+/* .container2{
+   margin-bottom: 100px;
+
+} */
+.container{
+    height: 13%;
+}
+.container3 {
+   width: 40%;
+   text-align:center;
+   margin:auto;
+   height: 50%;
+   font-size: 1.7rem;
+   font-family: 'Montserrat', sans-serif;
+   padding-top: 40px;
+   
+
+}
+.cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.container4 {
+    width: 30%;
+    text-align: justify;
+    height: 50%;
+    font-family:'Poppins', sans-serif;
+    position: relative;
+    left: 120px;
+
+ }
+ .container5{
+    width: 30%;
+    text-align: justify;
+    height: 50%;
+    font-family:'Poppins', sans-serif;
+    position: relative;
+    right: 120px;
+ }
+
+ .container6{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-top: 100px;
+    background: url('../images/bg-butlers-2020.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:22%;
+ }
+ .container7{
+    color: #ffffff;
+    width: 40%;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    right: 70px;
+ }
+ .container7 h1{
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 10px 0;
+ }
+ .container7 h2{
+    font-size: 32px;
+    margin: 10px 0;
+    font-weight: 100;
+ }
+ .btn{
+   padding: 13px;
+   background-color: #c1a267;
+   color: inherit;
+   font-weight: 900;
+   font-family:'Poppins', sans-serif;
+   width: 25%;
+   border: solid 1px #c1a267;
+  
+   
+ }
+ .btn:hover{
+    background-color: #fbd58a;
+  }
+                                             /* Rooms */
+.container8{
+    width: 50%;
+    margin: 200px auto 0 auto;
+    font-family:'Montserrat', sans-serif ;
+}
+.container8 img{
+    float: right;
+}
+
+.cont9{
+    width: 40%;
+    text-align: justify;
+}
+.btn1{
+    padding: 13px;
+    background-color: #c1a267;
+    color: inherit;
+    font-weight: 900;
+    font-family:'Poppins', sans-serif;
+    width: 50%;
+    color: white;
+    border: white 1px solid;
+    
+  }
+.btn1:hover{
+     background-color: #fbd58a;
+}
+                                     /* Feedback section */
+.cont2{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    height: 12%;
+    margin: 100px;
+}
+.fcontainer{
+ display: flex;
+ justify-content: space-around;
+ margin-top: 100px;
+}
+.fcontainer h1{
+ font-family:'Poppins', sans-serif ;
+}
+.feedbackCard img{
+    height: 50px;
+    width: 35;
+}
+.cont3{
+    display: flex;
+    justify-content: center;
+}
+#feedback{
+    text-align: center;
+    height: 1000px;
+}
+#feedback h1{
+    font-size: 2.8rem;
+}
+.cont3 form{
+    border: 1px solid black;
+    height: 600px;
+    padding: 50px;
+    width: 40%;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 1.5rem;
+    text-align: left;
+}
+#rating{
+    position: relative;
+    left: 195px;
+    width: 50%;
+    padding: 10px;
+}
+#comment{
+    position: relative;
+    left: 150px;
+    width: 60%;
+    padding: 10px;
+}
+#comm{
+    position: relative;
+    bottom: 100px;
+}
+#name{
+    position: relative;
+    left: 195px;
+    width: 50%;
+    padding: 10px;
+}
+#imgUrl{
+    position: relative;
+    left: 100px;
+    width: 50%;
+    padding: 10px;
+}
+#submit1{
+    background-color: #c1a267;
+    font-family:'Poppins', sans-serif;
+    font-size: 2rem;
+    border: #c1a267 1px solid;
+    padding: 10px;
+    width: 50%;
+    color: white;
+    position: relative;
+    top: 80px;
+    left: 180px;
+}
+
+#submit1:hover{
+    background-color: #fbd58a;
+}
+.feedbackCard{
+    border: 1px black solid;
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px #e3e3e3;
+}
+ .feedbackCard:hover{
+    box-shadow: 10px 10px 5px #c9c8c8; 
+ }
+ .feedbackCard button{
+    width: 20%;
+    margin-bottom: 10px;
+    background-color: red;
+ }
+                                           /* Horizontal rule */
+
+hr{
+    border: solid #2C3333 20px;
+    clear:right;
+    position: relative;
+    top: 100px;
+/* >>>>>>> e76cd1f8f9268ed18ae84afb2b3f5f777d631d4c */
 }
