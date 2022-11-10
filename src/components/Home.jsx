@@ -2,9 +2,9 @@ import React,{useState,useEffect} from 'react';
 import img from '../images/hemingways.png';
 import deluxe from '../images/deluxe_suite.jpg';
 import "../css/style.css"
-// import { Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { useRouteMatch } from 'react-router-dom';
-// import Subscribe from './Subscribe';
+import Subscribe from './Subscribe';
 
 
 
@@ -124,9 +124,9 @@ function handleBlur(e){
             </div>
             
 
-            {/* <Route exact path={`${match.url}`}>
+            <Route exact path={`${match.url}`}>
                 <Subscribe/>
-            </Route> */}
+            </Route>
             
         </div>
 
