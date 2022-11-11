@@ -254,7 +254,7 @@ nav{
     width: 50%;
     padding: 10px;
 }
-#imgUrl{
+#photo_url{
     position: relative;
     left: 100px;
     width: 50%;
@@ -330,13 +330,13 @@ nav{
     left: 140px;
     width: 40%;
 }
-#number{
+#phone_number{
     padding: 10px;
     position: relative;
     left: 28px;
     width: 40%;
 }
-#type{
+#suite{
     padding: 10px;
     position: relative;
     left: 28px;
