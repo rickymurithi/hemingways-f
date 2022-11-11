@@ -7,11 +7,11 @@ function Feedback(){
         rating:'',
         comment:'',
         name:'',
-        imgUrl:''
+        photo_url:''
     })
     function handleSubmit(e){
         e.preventDefault();
-        fetch('https://hemingways-backend.herokuapp.com/feedback',{
+        fetch('http://localhost:9292/feedbacks',{
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -50,7 +50,7 @@ function Feedback(){
                         <label htmlFor="name">Name:</label>
                         <input required type="text" name="Name" id="name" onChange={handleChange} value={formData.name} placeholder="Enter name" maxLength={20}/><br /> <br />
                         <label htmlFor="imgUrl">Your photo url:</label>
-                        <input required type="text" name="image_url" id="imgUrl" onChange={handleChange} value={formData.imgUrl}placeholder="Enter Img url"/> <br />
+                        <input required type="text" name="image_url" id="photo_url" onChange={handleChange} value={formData.photo_url}placeholder="Enter Img url"/> <br />
                         <input type="submit" id='submit1'/>
                     </form>
                 </div>
