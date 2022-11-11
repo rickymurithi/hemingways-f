@@ -14,12 +14,12 @@ function Home() {
 //  const [changedComment,setComment]=useState('')
  const [feedbacks, setFeedback]=useState([]);
  useEffect(()=>{
-    fetch(`https://hemingways-backend.herokuapp.com/feedback/`)
+    fetch(`http://localhost:9292/feedbacks`)
     .then(res=>res.json())
     .then(data=>setFeedback(data))
 
  },[])
-
+console.log('This the fetch data',feedbacks)
 function handleBlur(e){
     console.log(e.target.innerText)
     // //console.log(typeof(e.target.innerText))
@@ -30,7 +30,7 @@ function handleBlur(e){
     // console.log('This is new comment:',changedComment)
     // // console.log("handle Blur")
 
-       fetch(`https://hemingways-backend.herokuapp.com/feedback/${e.target.id}`,{
+       fetch(`http://localhost:9292/feedbacks/${e.target.id}`,{
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -47,7 +47,7 @@ function handleBlur(e){
     <div key={feedback.id} className="feedbackCard" >
         <h1>{feedback.rating}</h1>
         <p contentEditable='true' onBlur={handleBlur} id={feedback.id}>{feedback.comment}</p>
-        <img src={feedback.imgUrl} alt='img' />
+        <img src={feedback.photo_url} alt='img' />
         <p>{feedback.name}</p>
         <button onClick={handleDelete}  id={feedback.id}>x</button>
     </div>)
@@ -64,7 +64,7 @@ function handleBlur(e){
     setFeedback(newfeedbacks)
     console.log('This is newfeedback:',newfeedbacks)
     
-    fetch(`https://hemingways-backend.herokuapp.com/feedback/${e.target.id}`,{
+    fetch(`http://localhost:9292/feedbacks/${e.target.id}`,{
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
