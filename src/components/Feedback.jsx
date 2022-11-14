@@ -11,7 +11,7 @@ function Feedback(){
     })
     function handleSubmit(e){
         e.preventDefault();
-        fetch('http://localhost:9292/feedbacks',{
+        fetch('https://powerful-escarpment-81140.herokuapp.com/feedbacks',{
             method: "POST",
             headers: {
               "Content-Type": "application/json",

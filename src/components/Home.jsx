@@ -14,7 +14,7 @@ function Home() {
 //  const [changedComment,setComment]=useState('')
  const [feedbacks, setFeedback]=useState([]);
  useEffect(()=>{
-    fetch(`http://localhost:9292/feedbacks`)
+    fetch(`https://powerful-escarpment-81140.herokuapp.com/feedbacks`)
     .then(res=>res.json())
     .then(data=>setFeedback(data))
 
@@ -30,7 +30,7 @@ function handleBlur(e){
     // console.log('This is new comment:',changedComment)
     // // console.log("handle Blur")
 
-       fetch(`http://localhost:9292/feedbacks/${e.target.id}`,{
+       fetch(`https://powerful-escarpment-81140.herokuapp.com/feedbacks/${e.target.id}`,{
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -64,7 +64,7 @@ function handleBlur(e){
     setFeedback(newfeedbacks)
     console.log('This is newfeedback:',newfeedbacks)
     
-    fetch(`http://localhost:9292/feedbacks/${e.target.id}`,{
+    fetch(`https://powerful-escarpment-81140.herokuapp.com/feedbacks/${e.target.id}`,{
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
